@@ -1,0 +1,123 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(1, 1fr);                  
+    grid-gap: 0;                   
+    font-family: $lato;
+    color: $dark-gray;
+    background-color: $white;
+}
+
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-start: 1;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+  }
+
+.content {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-start: 1;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-start: 1;            
+    }
+  }
+
+.experience {
+    margin: 10% 15% 15% 10%;
+    color: $dark-gray;
+}
+
+@media (max-width: 768px) {
+    .experience {
+        margin: 15% 15% 15% 10%;
+    }
+  }
+
+.experience__title {
+    font-size: $xx-large;
+    font-weight: 500;
+    margin-bottom: 15%;
+}
+
+@media (max-width: 768px) {
+    .experience__title {
+        font-size: $x-large;
+    }
+  }
+
+.experience__info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 6% auto 3% auto;
+}
+
+.experience__info-work {
+
+}
+
+.experience__info-role {
+    font-size: $x-large;
+    font-weight: $bold;
+    color: $dark-gray;
+}
+
+@media (max-width: 768px) {
+    .experience__info-role {
+        font-size: $large;
+    }
+  }
+
+.experience__info-place {
+    font-size: $medium;
+    font-weight: 500;
+    color: $dark-gray;
+}
+
+@media (max-width: 768px) {
+    .experience__info-role {
+        font-size: $medium;
+    }
+  }
+
+.experience__info-date {
+    font-size: $medium;
+    font-weight: $light;
+    color: $dark-gray;
+    margin: auto 0;
+}
+
+@media (max-width: 768px) {
+    .experience__info-date {
+        font-size: $x-small;
+    }
+  }
+
+.experience__info-description {
+}
+
+@media (max-width: 768px) {
+    .experience__info-description {
+        font-size: $x-small;
+    }
+  }
+
+li {
+    margin-top: 1%;
+}
